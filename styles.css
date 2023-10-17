@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(177, 97, 0);
+  text-align: center;
+  text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac,
+    -1px -1px 0 #c6c23f;
+}
+.wish {
+  background: transparent;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(214, 143, 56);
+  text-shadow: 0 2px 2px #dfdfdf, -2px 5px 1px #b8b8b8, -4px 8px 0px #979797,
+    -6px 11px 0px #747474, -8px 14px 0px #565656, -10px 17px 0px #343434,
+    -12px 20px 0px #171717, -14px 23px 0px #000;
+}
+.clock {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.box {
+  border-radius: 10px;
+  min-width: 80px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: bisque;
+  box-shadow: rgba(112, 112, 112, 0.4) 0px 30px 90px;
+}
+h2 {
+  font-size: 2rem;
+  transform: scale(1);
+  color: rgb(255, 153, 0);
+}
+h2:hover {
+  transition: all 0.8s ease-in-out;
+  transform: scale(1.5);
+}
+p {
+  width: 100%;
+  background-color: rgb(255, 140, 0);
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  color: rgb(255, 227, 193);
+  padding: 3px 0;
+}
+h3 {
+  font-size: 1.5rem;
+  color: rgb(177, 97, 0);
+  background-color: bisque;
+  padding: 3px 7px;
+  border-radius: 8px;
+}
