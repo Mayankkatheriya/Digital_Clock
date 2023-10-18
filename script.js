@@ -7,21 +7,21 @@ let hours = Number(new Date().getHours());
 if (hours <= 4 || hours >= 22) {
   document.body.style.backgroundImage = "url(./midnight.jpg)";
   wish.innerText = "Good Night";
-} else if (hours >= 5 && hours <= 7) {
+} else if (hours > 4 && hours <= 7) {
   document.body.style.backgroundImage = "url(./sunrise.jpg)";
   wish.innerText = "Good Morning";
-} else if (hours >= 8 && hours <= 12) {
+} else if (hours > 7 && hours <= 12) {
   document.body.style.backgroundImage = "url(./morning.jpg)";
   wish.innerText = "Good Morning";
-} else if (hours >= 13 && hours <= 16) {
+} else if (hours > 12 && hours <= 17) {
   document.body.style.backgroundImage = "url(./afternoon.jpg)";
   wish.innerText = "Good Afternoon";
-} else if (hours >= 17 && hours <= 19) {
+} else if (hours > 17 && hours <= 19) {
   document.body.style.backgroundImage = "url(./sunset.jpg)";
   wish.innerText = "Good Evening";
 } else {
   document.body.style.backgroundImage = "url(./night.jpg)";
-  wish.innerText = "Good Night";
+  wish.innerText = "Good Evening";
 }
 
 function updateTime() {
