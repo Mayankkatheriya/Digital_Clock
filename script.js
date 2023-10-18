@@ -42,6 +42,11 @@ function updateTime() {
   h = String(h).padStart("2", "0");
   m = String(m).padStart("2", "0");
   s = String(s).padStart("2", "0");
+  second.style.transition = "0.5s ease-in-out"
+  second.style.transform = "scale(1.5)"
+  setTimeout(()=>{
+    second.style.transform = "scale(1)"
+  },500)
   hour.textContent = `${h}`;
   minute.textContent = `${m}`;
   second.textContent = `${s}`;
