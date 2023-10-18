@@ -4,19 +4,19 @@ const second = document.querySelector(".sec");
 const zone = document.querySelector("h3");
 const wish = document.querySelector(".wish");
 let hours = Number(new Date().getHours());
-if (hours <= 4 || hours >= 22) {
+if (hours <= 3 || hours >= 22) {
   document.body.style.backgroundImage = "url(./midnight.jpg)";
   wish.innerText = "Good Night";
-} else if (hours > 4 && hours <= 7) {
+} else if (hours > 3 && hours <= 6) {
   document.body.style.backgroundImage = "url(./sunrise.jpg)";
   wish.innerText = "Good Morning";
-} else if (hours > 7 && hours <= 12) {
+} else if (hours > 6 && hours <= 11) {
   document.body.style.backgroundImage = "url(./morning.jpg)";
   wish.innerText = "Good Morning";
-} else if (hours > 12 && hours <= 17) {
+} else if (hours > 11 && hours <= 16) {
   document.body.style.backgroundImage = "url(./afternoon.jpg)";
   wish.innerText = "Good Afternoon";
-} else if (hours > 17 && hours <= 19) {
+} else if (hours > 16 && hours <= 19) {
   document.body.style.backgroundImage = "url(./sunset.jpg)";
   wish.innerText = "Good Evening";
 } else {
